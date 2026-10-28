@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 4</title>
+  </head>   
+  <body>
+    <h1 align="center" Border="n">Hotel Room Booking Form</h1>
+    <form action="#" method="post" align="center">
+
+         <label for="fullname">Full Name:</label>
+         <input type="text" id="fullname" name="fullname" required><br><br>
+          <label for="Email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+           <label for="phone">Phone Number:</label>
+           <input type="tel" id="phone no." name="phone no." required><br><br>
+            <label for="Check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required><br><br>
+             <label for="check-out">Check-Out Date:</label>
+             <input type="date" id="check-out" name="check-out" required><br><br>
+             <label for="room-type">Room Type:</label>
+             <select id="room-type" name="room-type" required>
+                 <option value="">Select a room type</option>
+                 <option value="single">Single Bed</option>
+                 <option value="double">Double Bed</option>
+                 <option value="suite">Suite</option>
+             </select><br><br>
+              <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required><br><br>
+                 <label for="requests"><br>Special Requests:</br></label>
+                 <textarea id="requests" name="requests" rows="4" cols="50" placeholder="Enter any special requests or requirements here..."></textarea><br><br>
+                    <input type="submit" value="Book Now">
+                    <input type="reset" value="Reset Form">
+  </body>  
+  </html>   
