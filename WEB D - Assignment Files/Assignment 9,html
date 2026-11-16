@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Quotation and Citation Elements</title>
+</head>
+<body>
+
+  <!-- Block quotation (indented by default) -->
+  <blockquote>The best way to predict the future is to create it.</blockquote>
+
+  <!-- Inline quotation (browser adds quote marks) -->
+  <p>As he said, <q>Stay hungry, stay foolish.</q></p>
+
+  <!-- Citation of a work's title (shown in italics) -->
+  <p>Book: <cite>The Pragmatic Programmer</cite></p>
+
+  <!-- Abbreviation: hover over W3C to see the full form as a tooltip -->
+  <p><abbr title="World Wide Web Consortium">W3C</abbr> sets web standards.</p>
+
+  <!-- Contact information (shown in italics) -->
+  <address>
+    Contact: Admin Office<br>
+    College Road, Delhi
+  </address>
+
+  <!-- Deleted text (strikethrough) and inserted text (underline) -->
+  <p><del>Old price 500</del> <ins>New price 400</ins></p>
+
+</body>
+</html>
