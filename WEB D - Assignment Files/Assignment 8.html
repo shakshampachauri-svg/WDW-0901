@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Hyperlinks and Images with Attributes</title>
+</head>
+<body id="top">
+
+  <p>Links demo</p>
+
+  <!-- External link: opens in a new tab -->
+  <a href="https://www.w3.org" target="_blank" rel="noopener">External link</a><br>
+
+  <!-- Internal link: jumps to the element with id="bottom" -->
+  <a href="#bottom">Jump to bottom</a><br>
+
+  <!-- Email link -->
+  <a href="mailto:info@example.com">Email us</a><br>
+
+  <!-- Image link with attributes (logo.png doesn't exist, so alt text shows) -->
+  <a href="https://www.example.com">
+    <img src="logo.png" alt="Logo" width="120" height="60">
+  </a>
+
+  <!-- Empty space so the page scrolls and the jump link is visible -->
+  <div style="height: 300px;"></div>
+
+  <p id="bottom">Bottom. <a href="#top">Back to top</a></p>
+
+</body>
+</html>
