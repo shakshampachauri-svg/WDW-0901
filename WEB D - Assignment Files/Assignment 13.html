@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekly Timetable</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Rowspan and Colspan (Timetable)</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px 14px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <table border="n">
-        <caption><b>Weekly Timetable</b></caption>
+
+  <table>
+    <caption><strong>Weekly Timetable</strong></caption>
+
     <tr>
-        <th>Day</th>
-        <th>9:00 - 10:00</th>
-        <th>10:00 - 11:00</th>
-        <th>11:00 - 12:00</th>
-    </tr> 
-<tr>
-    <td>Mon</td>
-    <td>Maths</td>
-    <td>HTML</td>
-    <td colspan="2" style="text-align: center;">Web Lab</td>
-</tr>
-<tr>
-    <td>Tue</td>
-    <td>DBMS</td>
-    <td>OS</td>
-</tr>
-<tr>
-    <td>Wed</td>
-    <td rowspan="2" style="text-align: center;">Seminar</td>
-</tr></table>
+      <th>Day</th>
+      <th>9-10</th>
+      <th>10-11</th>
+      <th>11-12</th>
+    </tr>
+
+    <tr>
+      <td>Mon</td>
+      <td>Maths</td>
+      <td>HTML</td>
+      <!-- rowspan="2": this cell merges two rows (Mon and Tue) -->
+      <td rowspan="2">Web Lab</td>
+    </tr>
+
+    <tr>
+      <td>Tue</td>
+      <td>DBMS</td>
+      <td>OS</td>
+      <!-- no 4th cell here: it is covered by the Web Lab rowspan above -->
+    </tr>
+
+    <tr>
+      <td>Wed</td>
+      <!-- colspan="3": this cell merges three columns -->
+      <td colspan="3">Seminar</td>
+    </tr>
+  </table>
+
 </body>
 </html>
