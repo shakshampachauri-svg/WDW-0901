@@ -7,7 +7,6 @@
 </head>
 <body>
 
-  <!-- Block quotation (indented by default) -->
   <blockquote>The best way to predict the future is to create it.</blockquote>
 
   <!-- Inline quotation (browser adds quote marks) -->
