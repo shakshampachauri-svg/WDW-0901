@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 17: Form Attributes and Input Validation</title>
+</head>
+<body>
+
+  <form action="#" method="post">
+
+    <p>
+      <input type="text" name="fullname" placeholder="Full name"
+             required aria-label="Full name">
+    </p>
+
+    <p>
+      <input type="email" name="email" placeholder="you@college.edu"
+             required aria-label="Email">
+    </p>
+
+    <p>
+      <input type="tel" name="mobile" placeholder="10-digit mobile"
+             pattern="[0-9]{10}" maxlength="10"
+             title="Enter exactly 10 digits" required aria-label="Mobile number">
+    </p>
+
+    <p>
+      <input type="password" name="password" placeholder="Min 6 characters"
+             minlength="6" required aria-label="Password">
+    </p>
+
+    <p>
+      <input type="number" name="age" placeholder="Age (17-30)"
+             min="17" max="30" required aria-label="Age">
+    </p>
+
+    <p>
+      <button type="submit">Register</button>
+    </p>
+
+  </form>
+
+</body>
+</html>
